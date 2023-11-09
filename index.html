@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Ej Graffitti</title>
+</head>
+<body>
+<main>
+    <div class="flex">
+        <div class="bg-gray-200 p-4 w-1/3 h-screen">
+          <div class="flex flex-col justify-center items-center h-full">
+            <form id="myForm">
+              <input type="text" id="textInput" class="shadow-md shadow-black w-60 px-4 py-2 rounded text-center" placeholder="Ingrese su graffitti" required>
+              <button id="buttonid"
+                type="submit"
+                class="bg-yellow-500 shadow-md shadow-black mt-4 text-2xl text-black font-bold py-2 px-4 rounded w-60 text-center justify-center flex">
+                Submit
+              </button>
+              <h2 class="mt-2 font-semibold items-center flex justify-center">Escoja su color deseado</h2>
+              <div class="bg-gray-500 items-center flex justify-center shadow-lg rounded-lg shadow-black p-1 mt-2 w-20 ml-[80px]">
+                <input type="color" id="color" class="w-60 mb-4">
+              <span id="spanid"></span>
+              
+            </div>
+            <div class="flex flex-col mt-3">
+              <label for="graffitiCheckbox" class="inline bg-gray-500 text-center shadow-lg rounded-lg shadow-black p-1 w-20 ml-[80px]">
+                Graffiti
+                <input id="graffitiCheckbox" type="checkbox">
+              </label>
+              
+              <label for="posterCheckbox" class="inline bg-gray-500 mt-2 text-center shadow-lg rounded-lg shadow-black p-1 w-20 ml-[80px]">
+                Poster
+                <input id="posterCheckbox" type="checkbox">
+              </label>
+            </div>
+        </div>
+        </div>
+      </form>
+      
+        <div id="wall" class="bg-yellow-200 p-4 w-2/3 h-screen flex flex-wrap justify-center items-center gap-2 overflow-y-scroll">
+        </div>
+      </div>
+    </main>
+
+  
+    <script src="/index.js"></script>
+    <script src="/tailwind.config.js"></script>
+  </body>
+</html>
